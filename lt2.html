@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title id="tl">Два числа </title>
+</head>
+<body>
+   <!-- <p>Output data of function sin(x)</p>
+    значение синуса от -->
+    <h1 id="data"> </h1>
+    <p id="answer">   </p>
+    <script>
+       // let x=0;
+       let result='Какое общее произведение двух чисел: ';
+       let str="Два числа";
+       let str_1="Сравнение чисел a и b";
+      /* let anw_1="Вы ввели a =";
+       let anw_2="Вы ввели b =";*/
+       let a =prompt('Enter a', '');
+       let b =prompt('Enter b', '');
+     // alert("Вы вели два числа: " + a +" и " + b);
+		/*if (Math.sqrt(a*b) < 4) {
+				result+='Мало';
+		} else {
+				result+='Много';
+		}*/
+    if(a&&b){
+		  result += (Math.sqrt(a*b) < 4) ? 'Мало!':'Много!';
+			document.getElementById("data").innerHTML=str_1;
+			//document.getElementById("answer").innerHTML=ans;
+			document.getElementById("answer").innerHTML=result;}
+    else{
+      document.write("Вы ввели не все числа! Сравнение провести нельзя!")
+    }
+
+    </script>
+</body>
+</html>   

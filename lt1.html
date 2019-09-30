@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Пример 2_3</title>
+</head>
+<body>
+<script>
+//объявляем массив как экземпляр класса Array
+let month_names = new Array("January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December");
+//создаем экземпляр класса Date
+let d = new Date();
+//создаем переменную и получаем день месяца из экземпляра d
+let current_date = d.getDate();
+//создаем переменную и получаем номер месяца из экземпляра d
+//при чем счет месяцев идет с нуля
+let current_month = d.getMonth();
+//создаем переменную и получаем год в виде 4х чисел
+let current_year = d.getFullYear();
+alert("day - "+current_date+" ; month - " +current_month + " ; year - "+current_year);
+if (current_date >1 && current_date<11) {
+alert('День относится к  первой декаде месяца.');
+}
+else if (current_date >10 && current_date<21) {
+alert('День относится ко второй декаде месяца.');
+}
+else {
+alert('День относится к  третьей декаде месяца.');
+}
+</script>
+</body>
+</html>
